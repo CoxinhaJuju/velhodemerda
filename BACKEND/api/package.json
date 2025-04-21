@@ -1,16 +1,16 @@
 {
-  "name": "todo-backend",
+  "name": "api",
   "version": "1.0.0",
-  "description": "API de To-Do List com Node.js e MongoDB",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+  "test": "echo \"Error: no test specified\" && exit 1",
+  "start": "node index 'mongodb+srv://diego243262:ze110705@cluster0.oogu3.mongodb.net/tarefasDB?retryWrites=true&w=majority&appName=Cluster0'"
   },
-  "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.21.2",
-    "mongoose": "^8.12.1"
+  "express": "^4.18.1",
+  "mongoose": "^6.4.6"
   }
-}
+ }
