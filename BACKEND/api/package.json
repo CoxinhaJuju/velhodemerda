@@ -1,4 +1,14 @@
 {
+  "name": "todo-backend",
+  "version": "1.0.0",
+  "description": "API de To-Do List com Node.js e MongoDB",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "dependencies": {
     "express": "^4.21.2",
     "mongoose": "^8.12.1"
