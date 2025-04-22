@@ -19,12 +19,18 @@ app.listen(PORT, () => {
 })
 
 // Obtendo os parametros passados pela linha de comando
-var userArgs = process.argv.slice(2);
-var mongoURL = userArgs[0];
+
 //Configurando a conexao com o Banco de Dados
 var mongoose = require('mongoose');
-mongoose.connect(mongoURL);
+const mongoURL = process.env.MONGODB_URI;
+
 mongoose.Promise = global.Promise;
+mongoose.connect(mongoURL, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  });
+  
+
 const db = mongoose.connection;
 db.on('error', (error) => {
  console.log(error)
